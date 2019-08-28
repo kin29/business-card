@@ -15,16 +15,16 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Tierney Cyren'),
-  handle: chalk.white('bitandbang'),
-  work: chalk.white('Senior Cloud Developer Advocate at Microsoft'),
+  name: chalk.green('        ⬢  ') + chalk.white('Shiga Ayano'),
+  handle: chalk.white('kin29'),
+  work: chalk.white('Backend Developer at Quartet'),
   opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
+  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('kin29ma_n'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-  github: chalk.gray('https://github.com/') + chalk.green('bnb'),
+  github: chalk.gray('https://github.com/') + chalk.green('kin29'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('@bnb/card  (via GitHub Package Registry)'),
+  web: chalk.cyan('https://kin29.info/'),
+  npx: chalk.red('npx') + ' ' + chalk.white('kin29'),
   labelWork: chalk.white.bold('       Work:'),
   labelOpenSource: chalk.white.bold('Open Source:'),
   labelTwitter: chalk.white.bold('    Twitter:'),
@@ -49,14 +49,14 @@ const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + // data.name + data.handle
-               newline + newline + // Add one whole blank line
-               working + newline + // data.labelWork + data.work
-               opensourcing + newline + newline + // data.labelOpenSource + data.opensource
-               twittering + newline + // data.labelTwitter + data.twitter
-               npming + newline + // data.labelnpm + data.npm
-               githubing + newline + // data.labelGitHub + data.github
-               linkedining + newline + // data.labelLinkedIn + data.linkedin
-               webing + newline + newline + // data.labelWeb + data.web
-               carding // data.labelCard + data.npx
+  newline + newline + // Add one whole blank line
+  working + newline + // data.labelWork + data.work
+  //opensourcing + newline + newline + // data.labelOpenSource + data.opensource
+  twittering + newline + // data.labelTwitter + data.twitter
+  //npming + newline + // data.labelnpm + data.npm
+  githubing + newline + // data.labelGitHub + data.github
+  //linkedining + newline + // data.labelLinkedIn + data.linkedin
+  webing + newline + newline + // data.labelWeb + data.web
+  carding // data.labelCard + data.npx
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))

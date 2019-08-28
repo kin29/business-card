@@ -1,10 +1,10 @@
-It's me, Tierney!
+It's me, Kin29!
 
 # Usage
 
 ## npm
 ```
-npx bitandbang
+npx kin29
 ```
 
 ## GitHub Package Registry
