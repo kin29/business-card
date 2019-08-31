@@ -4,7 +4,7 @@
   "description": "A personal card for Shiga Ayano (@kin29ma_n)",
   "main": "/bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "kin29": "./bin/card.js"
   },
   "repository": {
     "type": "git",
