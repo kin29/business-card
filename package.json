@@ -1,6 +1,6 @@
 {
   "name": "kin29",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "A personal card for Shiga Ayano (@kin29ma_n)",
   "main": "/bin/card.js",
   "bin": {
